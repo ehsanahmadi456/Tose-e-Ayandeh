@@ -11048,7 +11048,7 @@ html {
 }
 
 [dir] .navMT .navbar-toggle {
-  background: #1a1a1a;
+  background: transparent;
   border: none;
   border-radius: 0;
 }
@@ -11071,24 +11071,16 @@ html {
 }
 
 [dir] .navMT .navbar-toggle .icon-bar {
-  background: #f0e77b;
+  background: #4d5968;
   -webkit-transition: all 0.2s ease;
 }
 
 [dir] .navMT .navbar-toggle:hover {
-  background: #f0e77b;
-}
-
-[dir] .navMT .navbar-toggle:hover .icon-bar {
-  background: #1a1a1a;
+  background: transparent;
 }
 
 [dir] .navMT .navbar-toggle:focus {
-  background: #f0e77b;
-}
-
-[dir] .navMT .navbar-toggle:focus .icon-bar {
-  background: #1a1a1a;
+  background: transparent;
 }
 
 .navMT .nav ul {
@@ -11113,6 +11105,7 @@ html {
 
 [dir] .navMT .nav ul li.hs-menu-item > a {
   padding: 10px 0;
+  color: #ffffff;
 }
 
 .navMT .nav ul li.hs-menu-item.active > a,
@@ -13080,6 +13073,7 @@ html {
 
 [dir] .cardsBig .item .box .img {
   margin-top: 20px;
+  width: 100%;
 }
 
 .cardsBig .item .box .btn span {
@@ -13972,7 +13966,7 @@ footer .socials a:hover {
 
 @media (max-width: 767px) {
   [dir] .navMT .navbar-collapse {
-    background: #f0e77b;
+    background: #4d5968;
   }
 
   [dir] .navMT .cta {
