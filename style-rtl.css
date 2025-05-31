@@ -13073,7 +13073,6 @@ html {
 
 [dir] .cardsBig .item .box .img {
   margin-top: 20px;
-  width: 100%;
 }
 
 .cardsBig .item .box .btn span {
@@ -13967,6 +13966,10 @@ footer .socials a:hover {
 @media (max-width: 767px) {
   [dir] .navMT .navbar-collapse {
     background: #4d5968;
+  }
+
+  [dir] .cardsBig .item .box .img {
+      width: 100%;
   }
 
   [dir] .navMT .cta {
