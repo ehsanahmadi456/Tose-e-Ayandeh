@@ -13969,7 +13969,7 @@ footer .socials a:hover {
   }
 
   [dir] .cardsBig .item .box .img {
-      width: 100%;
+    width: 100%;
   }
 
   [dir] .navMT .cta {
@@ -16489,7 +16489,6 @@ footer .socials a:hover {
 .fit-cover {
   object-fit: cover;
 }
-
 .btn.btn-arrow.ar.btn-sm.mt10::before,
 .btn.btn-arrow.ar.mt20::before {
   transform: rotate(180deg) !important;
