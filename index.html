@@ -1057,7 +1057,7 @@
   <script>
     i18next.use(i18nextHttpBackend).init(
   {
-    lng: "fa", // 👈 پیش‌فرض فارسی
+    lng: "fa",
     fallbackLng: "fa",
     backend: {
       loadPath: "locales/{{lng}}.json",
@@ -1065,7 +1065,7 @@
   },
   (err, t) => {
     if (err) return console.error(err);
-    updateContent(); // وقتی JSON لود شد
+    updateContent();
   }
 );
 
