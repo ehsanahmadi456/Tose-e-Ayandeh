@@ -417,6 +417,13 @@ textarea {
   line-height: inherit;
 }
 
+select {
+  -webkit-appearance: none; /* برای کروم و سفاری */
+  -moz-appearance: none; /* برای فایرفاکس */
+  appearance: none; /* استاندارد */
+  background-image: none; /* برای اطمینان */
+}
+
 a {
   color: #337ab7;
   text-decoration: none;
@@ -5118,6 +5125,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-radius: 0 !important;
     width: 100% !important;
   }
+
+  [dir] .navMT .nav ul li.hs-menu-item > a {
+    padding: 10px 0;
+    color: #ffffff;
+  }
+
   .navbar-nav .open .dropdown-menu {
     position: static;
     width: auto;
@@ -10338,6 +10351,22 @@ form input[type="submit"]:hover {
   transform: scaleX(1.1);
 }
 
+.btn-selector:hover select,
+.btn-selector select {
+  transform: scaleX(1) !important;
+}
+
+.selector-lang {
+  position: relative;
+}
+
+.selector-lang .icon-selector {
+  position: absolute;
+  left: 10px;
+  top: 43%;
+  color: white;
+}
+
 .btn.btn-arrow:hover {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -11101,11 +11130,6 @@ html {
   color: #1a1a1a;
   display: block;
   text-decoration: none;
-}
-
-[dir] .navMT .nav ul li.hs-menu-item > a {
-  padding: 10px 0;
-  color: #ffffff;
 }
 
 .navMT .nav ul li.hs-menu-item.active > a,

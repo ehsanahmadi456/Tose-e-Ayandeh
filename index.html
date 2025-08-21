@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fa" translate="no" dir="rtl">
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -16,6 +16,10 @@
 
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="style-rtl.css">
+<script src="https://unpkg.com/i18next@23.7.0/dist/umd/i18next.min.js"></script>
+<script src="https://unpkg.com/i18next-http-backend@2.5.1/i18nextHttpBackend.min.js"></script>
+<script src="js/i18n.js"></script>
+
     <!-- <link rel="stylesheet" href="style.css"> -->
 
 
@@ -142,7 +146,7 @@
     <meta name="generator" content="HubSpot">
 </head>
 
-<body translate="no">
+<body >
 
 
     <div id="hs_cos_wrapper_module_1616103030600145"
@@ -171,29 +175,30 @@
                                 data-sitemap-name="default" data-menu-id="40906236400" aria-label="Navigation Menu">
                                 <ul role="menu">
                                     <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#home"
-                                            role="menuitem">خانه</a></li>
+                                            role="menuitem" data-i18n="head_1"></a></li>
                                     <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#service"
-                                            role="menuitem">خدمات</a></li>
+                                            role="menuitem" data-i18n="head_2"></a></li>
                                     <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#idea"
-                                            role="menuitem">ایده و اجرا</a></li>
+                                            role="menuitem" data-i18n="head_3"></a></li>
                                     <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#contact-us"
-                                            role="menuitem">ارتباط با ما</a></li>
+                                            role="menuitem" data-i18n="head_4"></a></li>
                                 </ul>
                             </div>
                         </span>
                     </div>
 
-                    <div class="nav navbar-nav navbar-right cta">
-                        <span id="hs_cos_wrapper_module_1616103030600145_"
-                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_cta" style=""
-                            data-hs-cos-general-type="widget"
-                            data-hs-cos-type="cta"><!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper"
-                                id="hs-cta-wrapper-f4ca51d5-ebed-4c8f-8308-60c923e50ca6">
-                                <script charset="utf-8" src="/hs/cta/cta/current.js"></script>
-                                <script
-                                    type="text/javascript"> hbspt.cta._relativeUrls = true; hbspt.cta.load(1791077, 'f4ca51d5-ebed-4c8f-8308-60c923e50ca6', { "useNewLoader": "true", "region": "na1" }); </script>
-                            </span><!-- end HubSpot Call-to-Action Code --></span>
-                    </div>
+                   <div class="nav selector-lang relativ btn-selector navbar-nav navbar-right cta !pt-0">
+  <select id="langSelector"
+    class="btn btn-default btn-md text-white appearance-none pr-8"
+    style="color: #FFF; background-color:#4d5968; border:none;">
+    <option value="fa">fa - فارسی</option>
+    <option value="en">en - English</option>
+    <option value="ar">ar - العربية</option>
+  </select>
+<span class="icon-selector"> ▼ 
+  </span>
+</div>
+
                 </div>
             </div>
         </nav>
@@ -217,24 +222,16 @@
 
 
                             <div class="col-sm-5 col-xlg-5   cont rel pb30">
-                                <h1 class="head-banner" style="font-weight: 500;"><span>با <p style="font-weight: 600;display: inline;">توسعه آینده</p> از آینده جا نمی‌مونی!</span></h1>
+                                <h1 class="head-banner" style="font-weight: 500;"><span><span data-i18n="banner_head_1" style="font-weight: 500;"></span> <p style="font-weight: 600;display: inline;" data-i18n="name"></p> <span style="font-weight: 500;" data-i18n="banner_head_2"></span></span></h1>
                                 <p>
-                                    <span style="display: block;">توسعه آینده، تیمی جوان، خلاق و متخصص در حوزه‌ی طراحی
-                                        سایت، طراحی لوگو و طراحی
-                                        اپلیکیشن است.</span>
-                                    <span style="display: block;">ما با بهره‌گیری از جدیدترین تکنولوژی‌ها و ترندهای روز
-                                        دنیا، به کسب‌وکارها کمک
-                                        می‌کنیم تا در دنیای دیجیتال بدرخشند.</span>
-                                    <span style="display: block;">چه به دنبال راه‌اندازی یک وب‌سایت حرفه‌ای باشید، چه
-                                        نیاز به طراحی یک لوگوی خاص
-                                        یا ساخت اپلیکیشنی کاربردی داشته باشید، تیم توسعه آینده در کنار شماست تا از آینده
-                                        جا نمونید!</span>
+                                    <span style="display: block;" data-i18n="detail_banner_1"></span>
+                                    <span data-i18n="detail_banner_2" style="display: block;"></span>
+                                    <span data-i18n="detail_banner_3" style="display: block;"></span>
                                 </p>
 
                                 <div class="btns">
 
-                                    <a href="tel:+989300632685" class="btn btn-default btn-md mt20" style="color: #FFF;" title="Let’s talk"><span>مشاوره
-                                            رایگان</span></a>
+                                    <a href="tel:+989300632685" class="btn btn-default btn-md mt20" style="color: #FFF;" title="Let’s talk"><span data-i18n="text_button"></span></a>
 
                                 </div>
 
@@ -281,7 +278,7 @@
                                                 style="background-image: url(images/homepage-feature-case-study-layfield.webp)">
                                             </div>
                                             <div class="cta">
-                                                    <h2 style="font-weight: 700;"><span>همکاری با توسعه آینده</span></h2>
+                                                    <h2 style="font-weight: 700;"><span data-i18n="head_circle"></span></h2>
                                                     <!-- <p style="font-size: 16px;">خدمات ما</p> -->
                                             </div>
                                         </div>
@@ -289,7 +286,7 @@
                                 </div>
                                 <div class="row tit">
                                     <div class="col-sm-12 text-center pb30">
-                                        <h3 style="font-weight: 700;">نتایج چشمگیر برای مشتریانی مانند شما </h3>
+                                        <h3 style="font-weight: 700;" data-i18n="detail_circle"></h3>
                                     </div>
                                 </div>
                                 <div class="row icons circles">
@@ -315,9 +312,8 @@
                                                 </div>
                                                 <div class="cont">
                                                     <div class="int">
-                                                        <h4 style="font-weight: 700;"><span>طراحی و پیاده‌سازی اپلیکیشن</span></h4>
-                                                        <p>طراحی و توسعه اپلیکیشن موبایل با رابط کاربری جذاب و تجربه
-                                                            کاربری روان، برای ارتباط مؤثرتر با مشتریان شما.</p>
+                                                        <h4 style="font-weight: 700;"><span data-i18n="head_item_circle_1"></span></h4>
+                                                        <p data-i18n="detail_item_circle_1"></p>
 
 
 
@@ -349,12 +345,11 @@
                                                 </div>
                                                 <div class="cont">
                                                     <div class="int">
-                                                        <h4 style="font-weight: 700;"><span>طراحی لوگوی خلاق برای کسب‌وکار</span></h4>
-                                                        <p><span data-sheets-root="1"
+                                                        <h4 style="font-weight: 700;"><span data-i18n="head_item_circle_2"></span></h4>
+                                                        <p><span data-i18n="detail_item_circle_2" data-sheets-root="1"
                                                                 data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Increasing users by 164% with a UX-driven new site&quot;}"
                                                                 data-sheets-userformat="{&quot;2&quot;:4669,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:16777215}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:16777215}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:16777215}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:16777215}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;12&quot;:0,&quot;15&quot;:&quot;Tajawal&quot;}">
-                                                                با طراحی لوگوی خلاقانه و منحصر‌به‌فرد، برند شما را
-                                                                به‌گونه‌ای ماندگار در ذهن مخاطبان ثبت می‌کنیم.</span>
+                                                                </span>
                                                         </p>
 
 
@@ -380,10 +375,8 @@
                                                 </div>
                                                 <div class="cont">
                                                     <div class="int">
-                                                        <h4 style="font-weight: 700;"><span> طراحی و پیاده‌سازی وب‌سایت شخصی‌سازی شده</span></h4>
-                                                        <p>با طراحی وب‌سایت شخصی‌سازی‌شده و حرفه‌ای، کسب‌وکار شما را
-                                                            دقیقاً مطابق با نیازها و هویت برندتان به دنیای دیجیتال معرفی
-                                                            می‌کنیم</p>
+                                                        <h4 style="font-weight: 700;"><span data-i18n="head_item_circle_3"></span></h4>
+                                                        <p data-i18n="detail_item_circle_3"></p>
 
 
 
@@ -423,13 +416,10 @@
 
                                     <div class="contBox rel z3 bgBlue" style="border-radius: 4px;">
 
-                                        <h4 style="font-weight: 700;"><span>راه‌اندازی آینده‌ی دیجیتال کسب‌و‌کارت، از همین‌جا شروع می‌شه!</span>
+                                        <h4 style="font-weight: 700;"><span data-i18n="head_blue_content"></span>
                                         </h4>
                                         <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Get your copy of the playbook today!&quot;}"
-                                                data-sheets-userformat="{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}">با
-                                                طراحی اختصاصی سایت، لوگو و اپلیکیشن، کسب‌و‌کارت رو به سطح بالاتری ببر!
-                                                تیم خلاق و جوان توسعه آینده همراه توئه تا در مسیر دیجیتال‌سازی، هیچ
-                                                فرصتی رو از دست ندی.
+                                                data-sheets-userformat="{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}" data-i18n="detail_blue_content">
                                             </span></p>
                                         <a href="tel:+989300632685" class="btn btn-green btn-md mt20" title="Discover the Tool" s
                                             power'><span>درخواست مشاوره رایگان</span></a>
@@ -455,7 +445,7 @@
 
                         <div class="row">
                             <div class="col-sm-12 rel pb80 tit">
-                                <h2 style="font-weight: 700;">از ایده تا اجرا، کنار تو هستیم</h2>
+                                <h2 style="font-weight: 700;" data-i18n="head_card"></h2>
                             </div>
                         </div>
 
@@ -469,8 +459,8 @@
 
                                         <div class="cont">
 
-                                            <h3 style="font-weight: 600;"><span>طراحی سایت اختصاصی</span></h3>
-                                            <p><span>حرفه‌ای دیده شوید با یک وب‌سایت مدرن و واکنش‌گرا<br/>ما وب‌سایتی طراحی می‌کنیم که سریع، زیبا و واکنش‌گرا باشد، به طوری که در همه دستگاه‌ها بهترین تجربه را ارائه دهد. با رعایت اصول سئو، وب‌سایت شما در نتایج جستجوی گوگل به راحتی پیدا خواهد شد و باعث افزایش بازدید و تعامل بیشتر می‌شود.</span></p>
+                                            <h3 style="font-weight: 600;"><span data-i18n="head_card_1"></span></h3>
+                                            <p><span data-i18n="detail_card_1"></span></p>
 
 
                                         </div>
@@ -486,8 +476,8 @@
 
                                         <div class="cont">
 
-                                            <h3 style="font-weight: 600;"><span>طراحی و تولید اپلیکیشن</span></h3>
-                                            <p>ایده‌ات را به اپلیکیشنی محبوب تبدیل کن<br/>با طراحی رابط کاربری زیبا و تجربه کاربری عالی، اپلیکیشنی می‌سازیم که نیازهای کاربران را به بهترین شکل پاسخ دهد. اپ شما با رعایت اصول سئو در اپ استورها دیده خواهد شد و رشد سریع‌تری خواهد داشت.</p>
+                                            <h3 style="font-weight: 600;"><span data-i18n="head_card_2"></span></h3>
+                                            <p data-i18n="detail_card_2"></p>
 
 
                                         </div>
@@ -502,8 +492,8 @@
 
                                         <div class="cont">
 
-                                            <h3 style="font-weight: 600;"><span>طراحی لوگو خلاق و هویت بصری جذاب</span></h3>
-                                            <p><span>چهره برندت را حرفه‌ای بساز<br/>لوگوی منحصر به فرد و هویت بصری منطبق با برند شما طراحی می‌کنیم که در ذهن مخاطب باقی بماند. این هویت بصری با استفاده از اصول طراحی معتبر، باعث شناسایی و اعتماد بیشتر مشتریان خواهد شد.</span></p>
+                                            <h3 style="font-weight: 600;"><span data-i18n="head_card_3"></span></h3>
+                                            <p><span data-i18n="detail_card_3"></span></p>
 
 
                                         </div>
@@ -518,8 +508,8 @@
 
                                         <div class="cont">
 
-                                            <h3 style="font-weight: 600;"><span>سئو و بهینه‌سازی سایت</span></h3>
-                                            <p>در نتایج گوگل بدرخشید و بیشتر دیده بشوید<br/>با استراتژی‌های سئو هدفمند، سایت شما در نتایج جستجوی گوگل به بالاترین رتبه‌ها خواهد رسید. ما به شما کمک می‌کنیم تا ترافیک ارگانیک و مخاطبان هدفمند بیشتری جذب کنید و برندتان را در فضای آنلاین معرفی کنید.</p>
+                                            <h3 style="font-weight: 600;"><span data-i18n="head_card_4"></span></h3>
+                                            <p data-i18n="detail_card_4"></p>
 
 
                                         </div>
@@ -911,10 +901,10 @@
                                 <div class="">
                                     <div class="row cont">
                                         <div class="col-sm-12">
-                                            <h2 style="font-weight: 800;">ارتباط با ما</h2>
-                                            <h2 style="font-weight: 800;">آسان‌تر از همیشه با ما در تماس باشید</h2>
-                                            <p>
-تیم ما با روی خوش و در کوتاه‌ترین زمان پاسخگوی شما خواهد بود. تنها کافیست با دکمه زیر با ما در تماس باشید. منتظر شنیدن صدای شما هستیم!                                            </p>
+                                            <h2 style="font-weight: 800;" data-i18n="head_contact_1"></h2>
+                                            <h2 style="font-weight: 800;" data-i18n="head_contact_2"></h2>
+                                            <p  data-i18n="detail_contact">
+                                            </p>
                                         </div>
 
 
@@ -924,7 +914,7 @@
                                     <div class="row">
                                         <div class="col-sm-12 text-center">
 
-                                            <a href="tel:+989300632685" class="btn btn-default btn-lg mt40" style="color: #FFF;" title="Get started"><span>تماس</span></a>
+                                            <a href="tel:+989300632685" class="btn btn-default btn-lg mt40" style="color: #FFF;" title="Get started"><span data-i18n="button_contact"></span></a>
 
                                         </div>
                                     </div>
@@ -954,7 +944,7 @@
                                 <a class="brand" href="" title=""></a>
                             </div>
                             <div class="col-sm-6 rg text-center">
-                                <p> ایده و اجرا توسط تیم <span style="font-weight: 700;">توسعه آینده</span>© 2025<br>
+                                <p data-i18n="footer"><br>
 
 
                                     <a href="" class="link" title="Privacy policy">Privacy policy</a>
@@ -1064,6 +1054,39 @@
 
 
     <script src="script.js"></script>
+  <script>
+    i18next.use(i18nextHttpBackend).init(
+  {
+    lng: "fa", // 👈 پیش‌فرض فارسی
+    fallbackLng: "fa",
+    backend: {
+      loadPath: "locales/{{lng}}.json",
+    },
+  },
+  (err, t) => {
+    if (err) return console.error(err);
+    updateContent(); // وقتی JSON لود شد
+  }
+);
+
+function updateContent() {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    el.innerHTML = i18next.t(el.getAttribute("data-i18n"));
+  });
+
+  document.documentElement.lang = i18next.language;
+  document.body.style.direction = i18next.language === "en" ? "ltr" : "rtl";
+}
+
+function changeLang(lng) {
+  i18next.changeLanguage(lng).then(updateContent);
+}
+
+  document.getElementById("langSelector").addEventListener("change", function () {
+    const lng = this.value;
+    changeLang(lng);
+  });
+  </script>
 </body>
 
 </html>
